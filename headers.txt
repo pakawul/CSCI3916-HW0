@@ -1,0 +1,21 @@
+Request Headers = telling the servers what to do 
+User-Agent: PostmanRuntime/7.51.1 = client server
+Accept: */* = client can ccept any media type in response
+Cache-Control: no-cache = forces request to retrieve fresh data from the server
+Postman-Token: 71249d51-aafb-4b01-8454-aa324432aa6b = unqiue identifier added by postman to help prevent request replay
+Host: openlibrary.org = specifies the target host for the HTTP request
+Accept-Encoding: gzip, deflate, br = informs server which compression formats the client can decode
+Connection: keep-alive = requests TCP connection stay open for resuse
+
+Response Headers
+Server: nginx/1.28.1 = web server software handling request
+Date: Mon, 02 Feb 2026 03:48:49 GMT -timestamp of server generated response
+Content-Type: application/json response body is formatted as json
+Transfer-Encoding: chunked indiicates response is sent in chunks rather than fixed length
+Connection: keep-alive = confirms server will keep connection open for reuse
+access-control-allow-origin: * = header allowing any origin to access the resource
+access-control-allow-method: GET, OPTIONS = specifies which HTTP methods are allowed for cross-origin requests
+access-control-max-age: 86400 = indicates how long browser may cahce CORS permissions (in seconds)
+x-ol-stats: "MC 2 0.002 TT 0 0.006" = custom Open Library diagnositc header
+Referrer-Policy: no-referrer-when-downgrade = controls how much referrer information is sent with requests
+Content-Encoding: gzip = indicates that the response body is compressed using gzip
